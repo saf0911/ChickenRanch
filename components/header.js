@@ -38,8 +38,6 @@ function Header() {
           @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
         }
 
-
-
         a {
           text-align: center;
           align-self: center;
@@ -49,16 +47,17 @@ function Header() {
         .navBar {
           list-style-type: none;
           text-decoration: none;
-          background-color: white;
+          background-color: black;
+          color: white;
           display: grid;
-          grid-template-columns: repeat(6, 1fr);
-          grid-template-rows: 1fr ;
+          grid-template-columns: repeat(autofit, 1fr);
+          grid-template-rows: 2fr;
           grid-template-areas:
           'logo navBarLinks navBarLinks';
           align-self: center;
           font-family: 'Playfair Display', serif;
-          grid-gap: 10px 10px;
-          margin-bottom: -50px;
+          grid-gap: 1em 1em;
+          // margin-bottom: -50px;
         }
 
         .navbar-Links {
@@ -67,7 +66,7 @@ function Header() {
           grid-template-columns: repeat(6, 1fr) ;
           grid-template-areas:
           'home about branding books articles instagram';
-          grid-gap: 5px 0px;
+          grid-gap: 5px 5px;
         }
 
         .navbar-logo {

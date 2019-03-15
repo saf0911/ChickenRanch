@@ -29,6 +29,22 @@ const Home = () => (
             Buy it Here
           </a>
         </Link>
+        <p>
+          CD
+        </p>
+        <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-cd" target="_blank">
+          <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-cd" target="_blank">
+            Buy it Here
+          </a>
+        </Link>
+        <p>
+          USB Coffin
+        </p>
+        <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-usb-coffin" target="_blank">
+          <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-usb-coffin" target="_blank">
+            Buy it Here
+          </a>
+        </Link>
       </div>
       <div className='rightSide'>
         <Rightside />

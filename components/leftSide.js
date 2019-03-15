@@ -7,18 +7,20 @@ function leftSide() {
       <h2 className='title'> Recent Albums </h2>
       <div className='albums'>
         <div className='album1' >
-          <img className='ANG'  src='./static/images/ANG.jpg'/>
-          <Link href="https://www.amazon.com/gp/product/B07465XS4Z/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i0?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR" target="_blank">
-            <a className='ANGButton'>
-              <img src="http://www.niftybuttons.com/amazon/amazon-button2.png" alt="Amazon Button (via NiftyButtons.com)" />
+          <img className='recent1'  src='../static/images/negroterror.jpg' alt='Voice of Memphis'/>
+          <p> Voice of Memphis Single </p>
+          <Link href="https://http://store.chickenranchrecords.com/product/negro-terror-voice-of-memphis-7" target="_blank">
+            <a className='recent1Button'>
+              Buy it Here
             </a>
           </Link>
         </div>
         <div className='album2'>
-          <img className='CC' src='./static/images/CC.jpg'/>
-          <Link href="https://www.amazon.com/gp/product/B000S1L8ZW/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i1?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR" target="_blank">
-            <a className='CCButton'>
-              <img src="http://www.niftybuttons.com/amazon/amazon-button2.png" alt="Amazon Button (via NiftyButtons.com)" />
+          <img className='recent2' src='./static/images/beaver.jpg'/>
+          <p> Available Soon </p>
+          <Link href="https://" target="_blank">
+            <a className='recent2Button'>
+              Buy it Here Soon
             </a>
           </Link>
         </div>
@@ -56,14 +58,14 @@ function leftSide() {
           margin-right: auto;
         }
 
-        .ANG {
+        .recent1 {
           width: 100%;
           align-self: center;
           margin-left: auto;
           margin-right: auto;
         }
 
-        .ANGButton {
+        .album1Button {
           margin-left: auto;
           margin-right: auto;
         }
@@ -75,14 +77,14 @@ function leftSide() {
           margin-right: auto;
         }
 
-        .CC {
+        .recent2 {
           width: 100%;
           align-self: center;
           margin-left: auto;
           margin-right: auto;
         }
 
-        .CCButton {
+        .recent2Button {
           margin-left: auto;
           margin-right: auto;
         }

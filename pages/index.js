@@ -18,7 +18,7 @@ const Home = () => (
       <div className='centerMain'>
         <h2 className='focus'>Got that new Stuff? </h2>
         <img className='currentAlbum' src='/static/images/MrLewis.jpg' />
-        <p>
+        <p className='albumTitle'>
           Mr. Lewis and the Funeral Five Before The World Beat You Down
         </p>
         <div className='purchaseWrapper'>
@@ -96,6 +96,7 @@ const Home = () => (
         display: inline;
         margin-left: auto;
         margin-right: auto;
+        alighn-items: center;
       }
 
       .focus {
@@ -104,7 +105,12 @@ const Home = () => (
 
       .currentAlbum {
         width: 100%;
+        height: 75%;
         align-self: center;
+      }
+
+      .albumTitle {
+        text-align: center;
       }
 
       .purchaseWrapper {

@@ -25,14 +25,7 @@ function rightSide() {
       </p>
       </a>
     </Link>
-    <Link className='articles'>
-      <a>
-        <h4>Articles</h4>
-        <p>
-
-        </p>
-      </a>
-    </Link>
+    
 
 
 

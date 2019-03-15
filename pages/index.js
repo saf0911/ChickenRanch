@@ -1,89 +1,108 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
-import Nav from '../components/nav'
+import Header from '../components/header'
+import Leftside from '../components/leftSide'
+import Rightside from '../components/rightSide'
+
 
 const Home = () => (
-  <div>
-    <Head title="Home" />
-    <Nav />
+  <div className='page'>
+    <Head title="ChickenRanch" />
+    <Header />
 
     <div className="hero">
-      <h1 className="title">Welcome to Next!</h1>
-      <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
-
-      <div className="row">
-        <Link href="https://github.com/zeit/next.js#getting-started">
-          <a className="card">
-            <h3>Getting Started &rarr;</h3>
-            <p>Learn more about Next on Github and in their examples</p>
-          </a>
-        </Link>
-        <Link href="https://open.segment.com/create-next-app">
-          <a className="card">
-            <h3>Examples &rarr;</h3>
-            <p>
-              Find other example boilerplates on the{' '}
-              <code>create-next-app</code> site
-            </p>
-          </a>
-        </Link>
-        <Link href="https://github.com/segmentio/create-next-app">
-          <a className="card">
-            <h3>Create Next App &rarr;</h3>
-            <p>Was this tool helpful? Let us know how we can improve it</p>
+      <div className='leftSide'>
+        <Leftside />
+      </div>
+      <div className='centerMain'>
+        <h2 className='focus'>Got that new Stuff? </h2>
+        <img className='currentAlbum' src='/static/images/MrLewis.jpg' />
+        <p>
+          Mr. Lewis and the Funeral Five Before The World Beat You Down
+        </p>
+        <p>
+          Vinyl
+        </p>
+        <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-lp" target="_blank">
+          <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-lp" target="_blank">
+            Buy it Here
           </a>
         </Link>
       </div>
+      <div className='rightSide'>
+        <Rightside />
+      </div>
+
     </div>
 
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
+    <style jsx global>{`
+      @font-face {
+        font-family: 'Playfair Display', serif;
+        @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
       }
-      .title {
+
+      body {
         margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
       }
-      .title,
-      .description {
+      .page {
+        font-family: 'Playfair Display', serif;
+      }
+
+      .hero {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows:  1fr;
+        grid-template-areas:
+          'leftSide center rightSide'
+        gap: 10%;
+        margin-top: 2%;
+      }
+
+      .leftSide {
+        // grid-area: leftSide;
+        width: 100%;
+        border-right: 1px solid black;
+        display: block;
+        // background-color: pink;
+      }
+
+
+      .centerMain {
+        // grid-area: center;
+        width: 85%;
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .focus {
         text-align: center;
       }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+
+      .currentAlbum {
+        width: 100%;
+        align-self: center;
       }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
+
+      .mainRecord {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
       }
-      .card:hover {
-        border-color: #067df7;
+
+      .rightSide {
+        // grid-area: rightSide;
+        width: 100%;
+        display: block;
+        border-left: 1px solid black;
+        padding: 1%;
+        // background-color: rgb(232,232,232);
       }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
+
+
+
     `}</style>
   </div>
 )

@@ -21,30 +21,38 @@ const Home = () => (
         <p>
           Mr. Lewis and the Funeral Five Before The World Beat You Down
         </p>
-        <p>
-          Vinyl
-        </p>
-        <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-lp" target="_blank">
-          <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-lp" target="_blank">
-            Buy it Here
-          </a>
-        </Link>
-        <p>
-          CD
-        </p>
-        <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-cd" target="_blank">
-          <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-cd" target="_blank">
-            Buy it Here
-          </a>
-        </Link>
-        <p>
-          USB Coffin
-        </p>
-        <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-usb-coffin" target="_blank">
-          <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-usb-coffin" target="_blank">
-            Buy it Here
-          </a>
-        </Link>
+        <div className='purchaseWrapper'>
+          <div className='buy1'>
+            <p>
+              Vinyl
+            </p>
+            <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-lp" target="_blank">
+              <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-lp" target="_blank">
+                Buy it Here
+              </a>
+            </Link>
+          </div>
+          <div className='buy2'>
+            <p>
+              CD
+            </p>
+            <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-cd" target="_blank">
+              <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-cd" target="_blank">
+                Buy it Here
+              </a>
+            </Link>
+          </div>
+          <div className='buy3'>
+            <p>
+              USB Coffin
+            </p>
+            <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-usb-coffin" target="_blank">
+              <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-usb-coffin" target="_blank">
+                Buy it Here
+              </a>
+            </Link>
+          </div>
+        </div>
       </div>
       <div className='rightSide'>
         <Rightside />
@@ -77,16 +85,13 @@ const Home = () => (
       }
 
       .leftSide {
-        // grid-area: leftSide;
         width: 100%;
         border-right: 1px solid black;
         display: block;
-        // background-color: pink;
       }
 
 
       .centerMain {
-        // grid-area: center;
         width: 85%;
         display: inline;
         margin-left: auto;
@@ -102,6 +107,27 @@ const Home = () => (
         align-self: center;
       }
 
+      .purchaseWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+      }
+
+      .buy1 {
+        align-items: center;
+        text-align: center;
+      }
+
+      .buy2 {
+        align-items: center;
+        text-align: center;
+      }
+
+      .buy3 {
+        align-items: center;
+        text-align: center;
+      }
+
       .mainRecord {
         margin-left: auto;
         margin-right: auto;
@@ -109,12 +135,10 @@ const Home = () => (
       }
 
       .rightSide {
-        // grid-area: rightSide;
         width: 100%;
         display: block;
         border-left: 1px solid black;
         padding: 1%;
-        // background-color: rgb(232,232,232);
       }
 
 

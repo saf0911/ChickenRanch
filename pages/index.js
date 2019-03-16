@@ -61,6 +61,35 @@ const Home = () => (
     </div>
 
     <style jsx global>{`
+
+        @media only screen and (min-width: 321px) and (max-width: 767px)  {
+          .hero {
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows:  repreat(3, 1fr);
+            // grid-template-areas:
+            //   'leftSide'
+            //   'center'
+            //   'rightSide';
+            gap: 10%;
+            margin-top: 2%;
+          }
+        }
+
+        @media only screen and (min-width : 768px) {
+          .hero {
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows:  1fr;
+            grid-template-areas:
+              'leftSide center rightSide'
+            gap: 10%;
+            margin-top: 2%;
+          }
+        }
+
       @font-face {
         font-family: 'Playfair Display', serif;
         @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
@@ -73,16 +102,7 @@ const Home = () => (
         font-family: 'Playfair Display', serif;
       }
 
-      .hero {
-        background-color: white;
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows:  1fr;
-        grid-template-areas:
-          'leftSide center rightSide'
-        gap: 10%;
-        margin-top: 2%;
-      }
+
 
       .leftSide {
         width: 100%;

@@ -50,8 +50,8 @@ function Header() {
           background-color: black;
           color: white;
           display: grid;
-          grid-template-columns: repeat(autofit, 1fr);
-          grid-template-rows: 2fr;
+          grid-template-columns: repeat(autofit, minmax(25px, 1fr));
+          grid-template-rows: 1fr;
           grid-template-areas:
           'logo navBarLinks navBarLinks';
           align-self: center;
@@ -63,7 +63,7 @@ function Header() {
         .navbar-Links {
           grid-area: navBarLinks;
           display: grid;
-          grid-template-columns: repeat(6, 1fr) ;
+          grid-template-columns: repeat(autofit, minmax(25px, 1fr)) ;
           grid-template-areas:
           'home about branding books articles instagram';
           grid-gap: 5px 5px;

@@ -50,20 +50,19 @@ function Header() {
           background-color: black;
           color: white;
           display: grid;
-          grid-template-columns: repeat(autofit, minmax(25px, 1fr));
+          grid-template-columns: repeat(autofit, minmax(75px, 1fr));
           grid-template-rows: 1fr;
           grid-template-areas:
           'logo navBarLinks navBarLinks';
           align-self: center;
           font-family: 'Playfair Display', serif;
           grid-gap: 1em 1em;
-          // margin-bottom: -50px;
         }
 
         .navbar-Links {
           grid-area: navBarLinks;
           display: grid;
-          grid-template-columns: repeat(autofit, minmax(25px, 1fr)) ;
+          grid-template-columns: repeat(autofit, minmax(75px, 1fr)) ;
           grid-template-areas:
           'home about branding books articles instagram';
           grid-gap: 5px 5px;
@@ -142,9 +141,9 @@ function Header() {
         background-color: white;
         display: grid;
         grid-template-columns: 2fr  4fr ;
-        grid-template-rows:  1fr  ;
+        grid-template-rows:  1fr ;
         grid-template-areas:
-        'logo   navbar-Links';
+        'logo   navBarLinks';
         grid-gap: 5px 10px;
         font-family: 'Playfair Display', serif;
         margin-bottom: -30px;
@@ -169,6 +168,7 @@ function Header() {
       }
 
       .navbar-Links {
+        grid-area: navBarLinks;
         display: grid;
         grid-template-columns: repeat(6, 1fr) ;
         grid-template-areas:

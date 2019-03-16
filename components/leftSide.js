@@ -25,10 +25,6 @@ function leftSide() {
           </Link>
         </div>
 
-
-
-
-
       </div>
 
 
@@ -48,7 +44,7 @@ function leftSide() {
         .albums {
           display: grid;
           grid-template-columns: 1fr ;
-          grid-template-rows: repeat(2, 1fr);
+          grid-template-rows: repeat(autofit, 1fr);
         }
 
         .album1 {

@@ -24,15 +24,12 @@ function Header() {
       <Link className='navbar-articles' href="/articles">
         <a>Articles</a>
       </Link>
-      <Link className='navbar-instagram' href="/instagram">
-        <a>Instagram</a>
-      </Link>
     </div>
 
 
 
     <style jsx>{`
-      @media only screen and (min-width : 321px) and (max-width : 767px)  {
+      @media only screen and (min-width : 321px) and (max-width : 511px)  {
         @font-face {
           font-family: 'Playfair Display', serif;
           @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
@@ -118,7 +115,7 @@ function Header() {
 
 
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 512px) {
       @font-face {
         font-family: 'Playfair Display', serif;
         @import url('https://fonts.googleapis.com/css?family=Playfair+Display');

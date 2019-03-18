@@ -6,7 +6,7 @@ import Leftside from '../components/leftSide'
 import Rightside from '../components/rightSide'
 
 
-const About = () => (
+const Contact = () => (
   <div className='page'>
     <Head title="ChickenRanch" />
     <Header />
@@ -16,7 +16,7 @@ const About = () => (
         <Leftside />
       </div>
       <div className='centerMain'>
-        <h2 className='focus'>About Chicken Ranch</h2>
+        <h2 className='focus'>876-5309 </h2>
 
 
       </div>
@@ -100,4 +100,4 @@ const About = () => (
   </div>
 )
 
-export default About
+export default Contact

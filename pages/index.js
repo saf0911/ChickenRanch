@@ -102,11 +102,9 @@ const Home = () => (
         font-family: 'Playfair Display', serif;
       }
 
-
-
       .leftSide {
         width: 100%;
-        border-right: 1px solid black;
+        // border-right: 1px solid black;
         display: block;
       }
 
@@ -116,7 +114,7 @@ const Home = () => (
         display: inline;
         margin-left: auto;
         margin-right: auto;
-        alighn-items: center;
+        align-items: center;
       }
 
       .focus {
@@ -163,7 +161,7 @@ const Home = () => (
       .rightSide {
         width: 100%;
         display: block;
-        border-left: 1px solid black;
+        // border-left: 1px solid black;
         padding: 1%;
       }
 

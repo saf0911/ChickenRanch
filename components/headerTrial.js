@@ -21,11 +21,11 @@ function TrialHeader() {
             <Link  href="http://store.chickenranchrecords.com/">
               <a><li>Store</li></a>
             </Link>
-            <Link className='navbar-about' href="/about">
+            <Link href="/contact">
               <a><li>Contact</li></a>
             </Link>
             <Link className='navbar-about' href="/about">
-              <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+              <a /*href="https://erikterwan.com/" */ target="_blank"><li>Show me more</li></a>
             </Link>
           </ul>
         </div>

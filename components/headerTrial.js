@@ -5,31 +5,31 @@ import Link from 'next/link';
 function TrialHeader() {
   return (
     <div>
-    <nav role="navigation">
-<div id="menuToggle">
-
-
-  <input type="checkbox" />
-
-
-
-
-  <span></span>
-  <span></span>
-  <span></span>
-
-
-  
-  <ul id="menu">
-    <a href="#"><li>Home</li></a>
-    <a href="#"><li>About</li></a>
-    <a href="#"><li>Info</li></a>
-    <a href="#"><li>Contact</li></a>
-    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-  </ul>
-</div>
-</nav>
-
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <Link  href="/">
+              <a href="#"><li>Home</li></a>
+            </Link>
+            <Link  href="/about">
+              <a href="#"><li>About</li></a>
+            </Link>
+            <Link  href="http://store.chickenranchrecords.com/">
+              <a><li>Store</li></a>
+            </Link>
+            <Link className='navbar-about' href="/about">
+              <a><li>Contact</li></a>
+            </Link>
+            <Link className='navbar-about' href="/about">
+              <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+            </Link>
+          </ul>
+        </div>
+      </nav>
 
 
     <style jsx>{`
@@ -55,8 +55,8 @@ function TrialHeader() {
       #menuToggle {
         display: block;
         position: relative;
-        top: 50px;
-        left: 50px;
+        top: 25px;
+        left: 25px;
 
         z-index: 1;
 

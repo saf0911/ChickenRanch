@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
-import Header from '../components/header'
+import Header from '../components/headerTrial'
 import Leftside from '../components/leftSide'
 import Rightside from '../components/rightSide'
 

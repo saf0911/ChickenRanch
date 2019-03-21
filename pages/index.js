@@ -4,6 +4,7 @@ import Head from '../components/head'
 import Header from '../components/headerTrial'
 import Leftside from '../components/leftSide'
 import Rightside from '../components/rightSide'
+import ChickenButton from '../components/chickenButton'
 
 
 const Home = () => (
@@ -27,8 +28,8 @@ const Home = () => (
               Vinyl
             </p>
             <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-lp" target="_blank">
-              <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-lp" target="_blank">
-                Buy it Here
+              <a>
+                <ChickenButton />
               </a>
             </Link>
           </div>
@@ -37,8 +38,8 @@ const Home = () => (
               CD
             </p>
             <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-cd" target="_blank">
-              <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-and-the-funeral-5-before-the-world-beat-you-down-cd" target="_blank">
-                Buy it Here
+              <a>
+                <ChickenButton />
               </a>
             </Link>
           </div>
@@ -47,8 +48,8 @@ const Home = () => (
               USB Coffin
             </p>
             <Link  href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-usb-coffin" target="_blank">
-              <a className='mainRecord' href="http://store.chickenranchrecords.com/product/mr-lewis-the-funeral-5-before-the-world-beat-you-down-usb-coffin" target="_blank">
-                Buy it Here
+              <a>
+                <ChickenButton />
               </a>
             </Link>
           </div>

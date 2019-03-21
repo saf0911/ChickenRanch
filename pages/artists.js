@@ -7,7 +7,7 @@ import Rightside from '../components/rightSide'
 import ChickenButton from '../components/chickenButton'
 
 
-const About = () => (
+const Artists = () => (
   <div className='page'>
     <Head title="ChickenRanch" />
     <Header />
@@ -17,7 +17,18 @@ const About = () => (
         <Leftside />
       </div>
       <div className='centerMain'>
-        <h2 className='focus'>About Chicken Ranch</h2>
+        <h2 className='focus'>Artists </h2>
+          <div className='artistsContainer'>
+            <ul className='artistsList'>
+              <li className='artists'>
+                <Link className='shopLink' href='*****'>Shop Mr. Lewis Merch </Link>
+                <span className='artist'>Mr. Lewis and the Funeral Five </span>
+                <Link className='songLink' href='https://www.youtube.com/watch?v=OC-ex0J6VL4'>
+                  Check out a song.
+                </Link>
+              </li>
+            </ul>
+          </div>
 
 
       </div>
@@ -25,12 +36,12 @@ const About = () => (
         <Rightside />
       </div>
 
-
+      
     </div>
 
     <style jsx global>{`
 
-        @media only screen and (min-width: 321px) and (max-width: 767px)  {
+        @media only screen and (min-width: 321px) and (max-width: 511px)  {
           .hero {
             background-color: white;
             display: grid;
@@ -45,7 +56,7 @@ const About = () => (
           }
         }
 
-        @media only screen and (min-width : 768px) {
+        @media only screen and (min-width : 512px) {
           .hero {
             background-color: white;
             display: grid;
@@ -85,6 +96,37 @@ const About = () => (
         align-items: center;
       }
 
+      .artistsContainer {
+
+      }
+
+      .artistsList {
+        width: 100%;
+        border: 3px solid #010046;
+      }
+
+      .artists {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows:  1fr;
+        gap: 10%;
+      }
+
+      .artist {
+        border-right: 1px solid #010046;
+        border-left: 1px solid #010046;
+        text-align: center;
+      }
+
+      .shopLink {
+          text-align: center;
+      }
+
+      .songLink {
+          text-align: center;
+      }
+
       .focus {
         text-align: center;
       }
@@ -102,4 +144,4 @@ const About = () => (
   </div>
 )
 
-export default About
+export default Artists

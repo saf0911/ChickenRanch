@@ -18,14 +18,17 @@ function TrialHeader() {
             <Link  href="/about">
               <a href="#"><li>About</li></a>
             </Link>
-            <Link  href="http://store.chickenranchrecords.com/">
-              <a><li>Store</li></a>
+            <Link  href="/artists">
+              <a href="#"><li>Artists</li></a>
             </Link>
             <Link href="/contact">
               <a><li>Contact</li></a>
             </Link>
             <Link className='navbar-about' href="/about">
               <a /*href="https://erikterwan.com/" */ target="_blank"><li>Show me more</li></a>
+            </Link>
+            <Link  href="http://store.chickenranchrecords.com/">
+              <a><li>Go to the Store</li></a>
             </Link>
           </ul>
         </div>

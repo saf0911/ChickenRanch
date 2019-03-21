@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import ChickenButton from '../components/chickenButton'
 
 function leftSide() {
   return (
@@ -9,18 +10,18 @@ function leftSide() {
         <div className='album1' >
           <img className='recent1'  src='../static/images/negroterror.jpg' alt='Voice of Memphis'/>
           <p> Voice of Memphis Single </p>
-          <Link href="https://http://store.chickenranchrecords.com/product/negro-terror-voice-of-memphis-7" target="_blank">
-            <a className='recent1Button'>
-              Buy it Here
-            </a>
+          <Link href="http://store.chickenranchrecords.com/product/negro-terror-voice-of-memphis-7" target="_blank">
+          <a>
+            <ChickenButton />
+          </a>
           </Link>
         </div>
         <div className='album2'>
           <img className='recent2' src='./static/images/beaver.jpg'/>
           <p> Available Soon </p>
-          <Link href="https://" target="_blank">
-            <a className='recent2Button'>
-              Buy it Here Soon
+          <Link href='http://www.scottfoster.work'>
+            <a>
+            <ChickenButton />
             </a>
           </Link>
         </div>

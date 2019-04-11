@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import ChickenButton from '../components/chickenButton'
 
 function rightSide() {
   return (
   <div className='rightContainer'>
-    <h2 className='title'> Chicken ranch </h2>
+    <h2 className='title'> Chicken Ranch </h2>
     <img className='crrImg' src='/static/images/crrlogo.jpg' />
     <Link className='about'>
       <a>
@@ -25,7 +26,12 @@ function rightSide() {
       </p>
       </a>
     </Link>
-    
+    <Link className='branding' href='http://store.chickenranchrecords.com/'>
+      <a>
+        <h4>Check out the Store </h4>
+        
+      </a>
+    </Link>
 
 
 
@@ -55,7 +61,10 @@ function rightSide() {
       .quotes {
         grid-area: quotes;
       }
-
+      .branding {
+        display: flex;
+        justify-content: center;
+      }
 
   `}</style>
 

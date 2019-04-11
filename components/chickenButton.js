@@ -22,8 +22,15 @@ const ChickenButton = () => (
 
 
     <style jsx>{`
+      @font-face {
+        font-family: 'Signika Negative', sans-serif;
+        @import url('https://fonts.googleapis.com/css?family=Signika+Negative:700');
+      }
+
       .chickenButton {
         cursor: pointer;
+        font-weight: bold;
+        border: 2px solid #151656;
       }
 
 

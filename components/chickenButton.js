@@ -30,7 +30,11 @@ const ChickenButton = () => (
       .chickenButton {
         cursor: pointer;
         font-weight: bold;
-        border: 1px solid #151656;
+        border: 1px solid rgb(102, 102, 255);
+        width: 75%;
+        height: 75%;
+        background-color: rgb(220,220,220);
+        border-radius: 12px;
       }
 
 
